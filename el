@@ -28,7 +28,7 @@ module CurlElasticApi
     begin
     pager JSON.pretty_generate(JSON.parse(res))
     rescue JSON::ParserError
-      pager res
+      res
     end
   end
 end
